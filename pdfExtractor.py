@@ -6,7 +6,6 @@ def parse_pdf(pdfFile, regexStrings, region):
     relation = {}
     pdf = pdfx.PDFx(pdfFile)
     text = pdf.get_text()
-    print(text)
     for i in range(len(regexStrings)):
         try:
             # Find all matches in loop
